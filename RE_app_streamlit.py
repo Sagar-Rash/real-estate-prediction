@@ -92,7 +92,7 @@ if submitted:
         Property_Age, Is_Bungalow, Is_Condo]]
     
     # Load the pickle model
-    re_pickle = open(r"models\dt_RE_Model.pkl", "rb")
+    re_pickle = open(r"models/dt_RE_Model.pkl", "rb")
     re_model = pickle.load(re_pickle)
     re_pickle.close()
 
@@ -106,4 +106,4 @@ if submitted:
     st.subheader("Predicted vs. Actual Prices:")
     st.write("This is a graph of the predicted prices compared to the actual prices from the test dataset:")
     st.write("Note that this is a decision tree model, so the prediction can be one of a few numbers")
-    st.image(r"photos\DTree_PredictvsActual.png")
+    st.image(r"photos/DTree_PredictvsActual.png")
