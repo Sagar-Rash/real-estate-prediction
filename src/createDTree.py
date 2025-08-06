@@ -22,10 +22,11 @@ def createDTree(x_train, y_train, x_test, features, max_depth=3, max_features=10
         from sklearn import tree
         # Plot the tree with feature names
         print("Tree Plot")
-        features = features[0:max_features]
-        tree.plot_tree(dtmodel, feature_names = features)
-        # Save Figure
         try:
+            features = features[0:max_features]
+            tree.plot_tree(dtmodel, feature_names = features)
+            # Save Figure
+        
             savefig(r'photos\CST2216_DTree.png', dpi=1000)
         
             show()
@@ -34,4 +35,5 @@ def createDTree(x_train, y_train, x_test, features, max_depth=3, max_features=10
             return 0
     
     return dtmodel, dt_train_pred, dt_test_pred
+
 
