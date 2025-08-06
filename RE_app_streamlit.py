@@ -106,4 +106,4 @@ if submitted:
     st.subheader("Predicted vs. Actual Prices:")
     st.write("This is a graph of the predicted prices compared to the actual prices from the test dataset:")
     st.write("Note that this is a decision tree model, so the prediction can be one of a few numbers")
-    st.image(r"photos/DTree_PredictvsActual.png")
+    st.image(r"photos/DTree_PredictvsActual.PNG")
